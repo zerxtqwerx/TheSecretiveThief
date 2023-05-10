@@ -10,7 +10,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float maxDistanceToFind = 7f;
     [SerializeField] private float timeToFindAfterDisappearance = 3f;
     public LayerMask layerWithoutPeople;
-    //d
+    //dà
 
     private NavMeshAgent agent;
     private List<Vector3> posMovement = new List<Vector3>();
