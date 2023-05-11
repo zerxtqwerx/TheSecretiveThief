@@ -12,7 +12,7 @@ public class ManagerTimer : MonoBehaviour
     [SerializeField] Image[] itemSlots;
     public float timeToTake;
     public float timeToOut;
-
+    public GameObject winPanel;
 
 
     private float time;
@@ -30,6 +30,7 @@ public class ManagerTimer : MonoBehaviour
     [SerializeField] private float secondsToGrab;
     public float RageFillSeconds;
     private bool isRage;
+
     private void Start()
     {
         cam = Camera.main;   
@@ -101,11 +102,19 @@ public class ManagerTimer : MonoBehaviour
         {
             player.isMove = true;
             itemsAmount = 0;
-            SceneManager.LoadScene(0);
+            ShowWinPanel();
         }
     }
 
+    public void NextLevelButton()
+    {
+        SceneManager.LoadScene("Level2");
+    }
 
+    private void ShowWinPanel()
+    {
+        winPanel.gameObject.SetActive(true);
+    }
 
     private void TakeItem()
     {
