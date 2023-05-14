@@ -39,13 +39,25 @@ public class EnemyMovement : MonoBehaviour
         if (isTime) Timer();
 
         FindPlayer();
+        
 
         if(isPlayerFind && time == timeToFindAfterDisappearance && !isPlayerBehindTheWall)
         managerTimer.RageAddition();
     }
 
+    private bool IsNormalDistance()
+    {
+        if (CalculateDistance() >= 1)
+            return true;
+        return false;
+    }
 
-    
+    private float CalculateDistance()
+    {
+        float distance = Vector3.Distance(player.transform.position, agent.transform.position);
+        return distance;
+    }
+
     private void FindPlayer()
     {
         RaycastHit hit;
@@ -58,7 +70,10 @@ public class EnemyMovement : MonoBehaviour
 
             if (isPlayerFind || isTime)
         {
-            GoToPlayer();
+            if (IsNormalDistance() == true)
+            {
+                GoToPlayer();
+            }
            
         }
         else

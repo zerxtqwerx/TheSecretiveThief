@@ -100,6 +100,8 @@ public class ManagerTimer : MonoBehaviour
         {
             player.isMove = true;
             itemsAmount = 0;
+
+            money.AddMoneyOnFinishLevel();
             ShowWinPanel();
             ShowSelectLevel();
         }
@@ -125,6 +127,7 @@ public class ManagerTimer : MonoBehaviour
         {
             itemsAmount += 1;
             _object.GetComponent<ItemPointer>().Destroy();
+            money.CollectMoneyOnLevel(_object.GetComponent<Item>().price);
             Destroy(timerObj);
             player.isMove = true;
             isTaking = false;
@@ -141,7 +144,6 @@ public class ManagerTimer : MonoBehaviour
             if(itemSlots[i].GetComponent<ItemSlot>().icon == null)
             {
                 Item item = _object.GetComponent<Item>();
-                money.collectedMoneyOnThisLevel += item.price;
                 itemSlots[i].GetComponent<ItemSlot>().SetItem(item.icon, item.index);
                 break;
             }

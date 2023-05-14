@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class Money : MonoBehaviour
 {
     public Text amountOfMoney;
-    private int currentMoney;
-    public int collectedMoneyOnThisLevel;
+    public Text collectedLevelMoney;
+
+    static private int currentMoney;
+    private int collectedMoneyOnThisLevel;
 
     private void Start()
     {
@@ -28,12 +30,15 @@ public class Money : MonoBehaviour
     public void CollectMoneyOnLevel(int amount)
     {
         collectedMoneyOnThisLevel += amount;
+        collectedLevelMoney.text = collectedMoneyOnThisLevel + " $";
     }
 
-    public void AddMoneyonFinishLevel()
+    public void AddMoneyOnFinishLevel()
     {
         currentMoney += collectedMoneyOnThisLevel;
+        
         DeleteCollectedMoney();
+        ShowCurrentAmount();
     }
 
     public void DeleteCollectedMoney()
