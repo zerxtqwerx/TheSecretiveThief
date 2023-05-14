@@ -13,6 +13,7 @@ public class ManagerTimer : MonoBehaviour
     public float timeToTake;
     public float timeToOut;
     public GameObject winPanel;
+    public GameObject selectLevel;
 
 
     private float time;
@@ -103,12 +104,18 @@ public class ManagerTimer : MonoBehaviour
             player.isMove = true;
             itemsAmount = 0;
             ShowWinPanel();
+            ShowSelectLevel();
         }
     }
 
     public void NextLevelButton()
     {
         SceneManager.LoadScene("Level2");
+    }
+
+    private void ShowSelectLevel()
+    {
+        selectLevel.gameObject.SetActive(true);
     }
 
     private void ShowWinPanel()
