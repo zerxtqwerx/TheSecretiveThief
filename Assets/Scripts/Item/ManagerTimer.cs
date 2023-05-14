@@ -14,6 +14,7 @@ public class ManagerTimer : MonoBehaviour
     public float timeToOut;
     public GameObject winPanel;
     public GameObject selectLevel;
+    public Money money;
 
 
     private float time;
@@ -64,8 +65,6 @@ public class ManagerTimer : MonoBehaviour
             timerObj.transform.position = cam.WorldToScreenPoint(obj.transform.position);
         }
 
-
-
         if (obj.GetComponent<Item>())
         {
             _object = obj;
@@ -80,8 +79,6 @@ public class ManagerTimer : MonoBehaviour
         }
 
     }
-
-
 
     private void Update()
     {
@@ -106,11 +103,6 @@ public class ManagerTimer : MonoBehaviour
             ShowWinPanel();
             ShowSelectLevel();
         }
-    }
-
-    public void NextLevelButton()
-    {
-        SceneManager.LoadScene("Level2");
     }
 
     private void ShowSelectLevel()
@@ -149,6 +141,7 @@ public class ManagerTimer : MonoBehaviour
             if(itemSlots[i].GetComponent<ItemSlot>().icon == null)
             {
                 Item item = _object.GetComponent<Item>();
+                money.collectedMoneyOnThisLevel += item.price;
                 itemSlots[i].GetComponent<ItemSlot>().SetItem(item.icon, item.index);
                 break;
             }

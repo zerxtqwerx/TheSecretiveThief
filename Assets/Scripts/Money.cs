@@ -7,7 +7,8 @@ public class Money : MonoBehaviour
 {
     public Text amountOfMoney;
     private int currentMoney;
-    
+    public int collectedMoneyOnThisLevel;
+
     private void Start()
     {
         ShowCurrentAmount();
@@ -22,5 +23,21 @@ public class Money : MonoBehaviour
     {
         currentMoney += amount;
         ShowCurrentAmount();
+    }
+
+    public void CollectMoneyOnLevel(int amount)
+    {
+        collectedMoneyOnThisLevel += amount;
+    }
+
+    public void AddMoneyonFinishLevel()
+    {
+        currentMoney += collectedMoneyOnThisLevel;
+        DeleteCollectedMoney();
+    }
+
+    public void DeleteCollectedMoney()
+    {
+        collectedMoneyOnThisLevel = 0;
     }
 }
