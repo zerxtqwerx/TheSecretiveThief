@@ -132,6 +132,7 @@ public class ManagerTimer : MonoBehaviour
             player.isMove = true;
             isTaking = false;
             PickItem();
+            Debug.Log("takeitem");
         }
     }
 
