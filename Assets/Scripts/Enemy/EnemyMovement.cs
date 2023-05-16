@@ -15,7 +15,7 @@ public class EnemyMovement : MonoBehaviour
     private NavMeshAgent agent;
     private List<Vector3> posMovement = new List<Vector3>();
     private int nowIndexPosition = 0;
-    private GameObject player;
+    public GameObject player;
     public float time;
     private bool isTime;
     private bool isPlayerFind;
@@ -30,7 +30,7 @@ public class EnemyMovement : MonoBehaviour
         {
             posMovement.Add(transform.GetChild(i).transform.position);
         }
-        player = GameObject.FindGameObjectWithTag("player");
+        //player = GameObject.FindGameObjectWithTag("Player");
     }
 
 
