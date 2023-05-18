@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2865630940549008252}
   - component: {fileID: 4782850365126020993}
   m_Layer: 3
-  m_Name: Player1
+  m_Name: "\u043D\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C"
   m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
