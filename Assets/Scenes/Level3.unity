@@ -573,6 +573,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 7181658838640736774, guid: 327b565c00471f14fa1b8363bb271016, type: 3}
+    - target: {fileID: 1549474992887580583, guid: 96e71fd8dbfab5d45b898bfd04fd4921, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5a871d69b5cb6547836b459387d89d2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96e71fd8dbfab5d45b898bfd04fd4921, type: 3}
 --- !u!1 &237759033
@@ -2489,6 +2493,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: -950168876920684729, guid: 327b565c00471f14fa1b8363bb271016, type: 3}
+    - target: {fileID: 1549474992887580583, guid: 96e71fd8dbfab5d45b898bfd04fd4921, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5a871d69b5cb6547836b459387d89d2, type: 2}
     - target: {fileID: 7320705306138208420, guid: 96e71fd8dbfab5d45b898bfd04fd4921, type: 3}
       propertyPath: m_Size.x
       value: 0.03
@@ -2716,6 +2724,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: -6324624420066848598, guid: 327b565c00471f14fa1b8363bb271016, type: 3}
+    - target: {fileID: 1549474992887580583, guid: 96e71fd8dbfab5d45b898bfd04fd4921, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5a871d69b5cb6547836b459387d89d2, type: 2}
     - target: {fileID: 7320705306138208420, guid: 96e71fd8dbfab5d45b898bfd04fd4921, type: 3}
       propertyPath: m_Size.x
       value: 0.02
@@ -3594,6 +3606,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 8126394196920702706, guid: 327b565c00471f14fa1b8363bb271016, type: 3}
+    - target: {fileID: 1549474992887580583, guid: 96e71fd8dbfab5d45b898bfd04fd4921, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5a871d69b5cb6547836b459387d89d2, type: 2}
     - target: {fileID: 7320705306138208420, guid: 96e71fd8dbfab5d45b898bfd04fd4921, type: 3}
       propertyPath: m_Size.x
       value: 0.02
