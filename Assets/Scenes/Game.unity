@@ -492,6 +492,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6877080883739225683, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080883739225684, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080884419607390, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0003049389
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080884869627731, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080884869627731, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080884869627731, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -410
+      objectReference: {fileID: 0}
     - target: {fileID: 6877080885040526089, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -588,6 +612,26 @@ PrefabInstance:
       propertyPath: money
       value: 
       objectReference: {fileID: 1013876485}
+    - target: {fileID: 6877080885252638247, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080885252638247, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080885252638247, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080885277943682, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080885277943682, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
 --- !u!114 &542545354 stripped
