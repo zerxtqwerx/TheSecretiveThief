@@ -30,7 +30,7 @@ public class EnemyMovement : MonoBehaviour
         {
             posMovement.Add(transform.GetChild(i).transform.position);
         }
-        //player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("player");
     }
 
 
