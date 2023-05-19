@@ -59,12 +59,11 @@ public class ManagerTimer : MonoBehaviour
         {
             isOutLevel = true;
             time = timeToOut;
-
             timerObj = Instantiate(timer);
             timerObj.transform.SetParent(transform);
             timerObj.transform.position = cam.WorldToScreenPoint(obj.transform.position);
         }
-
+        
         if (obj.GetComponent<Item>())
         {
             _object = obj;
