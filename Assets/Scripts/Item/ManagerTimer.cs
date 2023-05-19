@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class ManagerTimer : MonoBehaviour
 {
+    SaveSerial saveSerial = new SaveSerial();
     [SerializeField] private Image timer;
     [SerializeField] Image[] itemSlots;
     public float timeToTake;
@@ -103,6 +104,8 @@ public class ManagerTimer : MonoBehaviour
             money.AddMoneyOnFinishLevel();
             ShowWinPanel();
             ShowSelectLevel();
+
+            saveSerial.SaveGame();
         }
     }
 

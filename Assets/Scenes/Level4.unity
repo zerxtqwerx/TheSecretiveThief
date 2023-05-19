@@ -8594,6 +8594,7 @@ GameObject:
   - component: {fileID: 788675666}
   - component: {fileID: 788675665}
   - component: {fileID: 788675664}
+  - component: {fileID: 788675667}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -8651,6 +8652,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &788675667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788675663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c96b1acbc22ad04d98973c88da2f27f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &796282607 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1444893370177427589, guid: 5d0eff98ad024ad4d917ff2b1f3df8e5, type: 3}
@@ -12051,6 +12064,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6877080883638314368, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6877080883638314368, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 3

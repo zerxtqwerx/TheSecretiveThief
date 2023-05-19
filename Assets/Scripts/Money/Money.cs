@@ -9,6 +9,9 @@ public class Money : MonoBehaviour
     public Text collectedLevelMoney;
 
     static private int currentMoney;
+    public int GetMoney() { return currentMoney; }
+    public void SetMoney(int n) { currentMoney = n; }
+
     private int collectedMoneyOnThisLevel;
 
     private void Start()

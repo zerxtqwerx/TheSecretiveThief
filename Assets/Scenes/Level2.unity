@@ -21975,6 +21975,7 @@ GameObject:
   - component: {fileID: 861619149}
   - component: {fileID: 861619148}
   - component: {fileID: 861619147}
+  - component: {fileID: 861619150}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -22032,6 +22033,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &861619150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861619146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c96b1acbc22ad04d98973c88da2f27f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &862148825
 GameObject:
   m_ObjectHideFlags: 0
@@ -26370,7 +26383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6877080884280382752, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 208
+      value: 1129
       objectReference: {fileID: 0}
     - target: {fileID: 6877080884280382752, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_ConstrainProportionsScale
