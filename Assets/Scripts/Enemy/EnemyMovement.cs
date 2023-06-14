@@ -22,6 +22,7 @@ public class EnemyMovement : MonoBehaviour
     private ManagerTimer managerTimer;
     public bool isPlayerBehindTheWall = true;
 
+
     void Start()
     {
         managerTimer = FindObjectOfType<ManagerTimer>();
@@ -31,6 +32,7 @@ public class EnemyMovement : MonoBehaviour
             posMovement.Add(transform.GetChild(i).transform.position);
         }
         player = GameObject.FindGameObjectWithTag("player");
+
     }
 
 

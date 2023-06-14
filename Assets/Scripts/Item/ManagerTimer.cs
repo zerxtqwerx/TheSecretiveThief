@@ -11,25 +11,37 @@ public class ManagerTimer : MonoBehaviour
     SaveSerial saveSerial = new SaveSerial();
     [SerializeField] private Image timer;
     [SerializeField] Image[] itemSlots;
+    int countLives;
+
     public float timeToTake;
     public float timeToOut;
     public GameObject winPanel;
+    public GameObject gameOver;
     public GameObject selectLevel;
     public Money money;
+    private HP hp;
 
 
     private float time;
+    private float gameTime = 0.0f;
+    public float GameTime() { return gameTime; }
+
     private bool isTaking;
     private bool isOutLevel;
     private Image timerObj;
     private GameObject _object;
     private Camera cam;
     private PlayerMovement player;
+    private Vector3 playerStartPosition;
+
+
+    [SerializeField] private int died = 0;
+    public int Died() { return died; }
 
     static public int itemsAmount = 0;
 
     [Space]
-    [SerializeField] private Image RageFillImage;
+    [SerializeField] Image RageFillImage;
     [SerializeField] private float secondsToGrab;
     public float RageFillSeconds;
     private bool isRage;
@@ -38,6 +50,10 @@ public class ManagerTimer : MonoBehaviour
     {
         cam = Camera.main;   
         player = FindObjectOfType<PlayerMovement>();
+        if( hp = GameObject.FindWithTag("lives").GetComponent<HP>())
+        {
+            Debug.Log("hp was initialized");
+        }
     }
     public void RageAddition()
     {
@@ -51,9 +67,28 @@ public class ManagerTimer : MonoBehaviour
 
         if (RageFillSeconds < 0) RageFillSeconds = 0;
         RageFillImage.fillAmount = RageFillSeconds / secondsToGrab;
-        if (RageFillSeconds >= secondsToGrab) SceneManager.LoadScene(0);
+        if (RageFillSeconds >= secondsToGrab)
+        {
+            Debug.Log("died = " + died);
+            RageFillImage.fillAmount = 0;
+            hp.MinusHP();
 
+            if (died == 2)
+            { 
+                gameOver.SetActive(true);
+                selectLevel.SetActive(true);
+            }
+            else
+            {
+                //сломано
+                RageFillSeconds = 0;
+                player.transform.position = new Vector3(0.0f, 0.5f, -15.0f);
+                Debug.Log("position was changed");
+                died += 1;
+            }
+        }
     }
+
     public void SetTime(GameObject obj)
     {
         if (obj.GetComponent<Finish>() && itemsAmount >= 1)
@@ -89,6 +124,10 @@ public class ManagerTimer : MonoBehaviour
 
     }
 
+    private void CountTime()
+    {
+        gameTime += Time.deltaTime;
+    }
 
     private void OutLevel()
     {

@@ -57,7 +57,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveController()
     {
-        if (isMove) isMove = false;
-        else isMove = true;
+        isMove = !isMove;
     }
 }

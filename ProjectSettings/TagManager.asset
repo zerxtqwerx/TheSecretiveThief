@@ -7,6 +7,9 @@ TagManager:
   - item
   - door
   - player
+  - enemy
+  - RageFill
+  - lives
   layers:
   - Default
   - TransparentFX
