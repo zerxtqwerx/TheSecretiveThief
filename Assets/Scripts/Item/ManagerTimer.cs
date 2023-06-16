@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 
 
@@ -138,6 +139,7 @@ public class ManagerTimer : MonoBehaviour
             itemsAmount = 0;
 
             money.AddMoneyOnFinishLevel();
+            EditorApplication.isPaused = true;
             ShowWinPanel();
             ShowSelectLevel();
 
@@ -184,6 +186,11 @@ public class ManagerTimer : MonoBehaviour
             {
                 Item item = _object.GetComponent<Item>();
                 itemSlots[i].GetComponent<ItemSlot>().SetItem(item.icon, item.index);
+
+                var tempColor = itemSlots[i].color;
+                tempColor.a = 1f;
+
+                itemSlots[i].color = tempColor;
                 break;
             }
         }
