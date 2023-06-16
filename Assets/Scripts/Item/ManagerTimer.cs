@@ -50,10 +50,7 @@ public class ManagerTimer : MonoBehaviour
     {
         cam = Camera.main;   
         player = FindObjectOfType<PlayerMovement>();
-        if( hp = GameObject.FindWithTag("lives").GetComponent<HP>())
-        {
-            Debug.Log("hp was initialized");
-        }
+        hp = GameObject.FindWithTag("lives").GetComponent<HP>();
     }
     public void RageAddition()
     {
@@ -69,12 +66,13 @@ public class ManagerTimer : MonoBehaviour
         RageFillImage.fillAmount = RageFillSeconds / secondsToGrab;
         if (RageFillSeconds >= secondsToGrab)
         {
-            Debug.Log("died = " + died);
+            //Debug.Log("died = " + died);
             RageFillImage.fillAmount = 0;
             hp.MinusHP();
 
             if (died == 2)
             { 
+                //ui controller
                 gameOver.SetActive(true);
                 selectLevel.SetActive(true);
             }
@@ -82,8 +80,7 @@ public class ManagerTimer : MonoBehaviour
             {
                 //сломано
                 RageFillSeconds = 0;
-                player.transform.position = new Vector3(0.0f, 0.5f, -15.0f);
-                Debug.Log("position was changed");
+                player.MovePlayerToStartLevel();
                 died += 1;
             }
         }

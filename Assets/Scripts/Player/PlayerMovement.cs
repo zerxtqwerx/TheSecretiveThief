@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     private float gravityValue = -9.81f;
     private bool groundedPlayer;
     private float targetAngle;
+    private Vector3 startPosition;
+    public Transform tr;
 
     public bool isMove = true;
 
@@ -20,8 +22,9 @@ public class PlayerMovement : MonoBehaviour
     {
         managerTimer = FindObjectOfType<ManagerTimer>();
         characterController = GetComponent<CharacterController>();
+        startPosition = tr.position;
+        Debug.Log(startPosition);
     }
-
 
     void Update()
     {
@@ -48,7 +51,10 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
+    public void MovePlayerToStartLevel()
+    {
+        tr.position = startPosition;
+    }
 
     private void OnTriggerEnter(Collider other)
     {

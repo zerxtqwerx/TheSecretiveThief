@@ -21,6 +21,9 @@ public class HP : MonoBehaviour
 
     private void DeleteHeart(int hp)
     {
-        lives[hp].enabled = false;
+        if (lives.Length != null)
+        {
+            lives[hp].enabled = false;
+        }
     }
 }
