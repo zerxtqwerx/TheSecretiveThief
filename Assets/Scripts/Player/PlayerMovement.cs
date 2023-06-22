@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform tr;
 
     public bool isMove = true;
+    private bool inMovement = false;
+    public bool IsMovement() => inMovement;
 
     private ManagerTimer managerTimer;
     void Start()
@@ -39,8 +41,13 @@ public class PlayerMovement : MonoBehaviour
         {
             if (joystick.Horizontal != 0 && joystick.Vertical != 0)
             {
+                inMovement = true;
                 targetAngle = Mathf.Atan2(playerVelocity.x, playerVelocity.z) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.Euler(0.0f, targetAngle, 0.0f);
+            }
+            else
+            {
+                inMovement = false;
             }
 
             playerVelocity.x = joystick.Horizontal * moveSpeed;
@@ -48,6 +55,10 @@ public class PlayerMovement : MonoBehaviour
             playerVelocity.z = joystick.Vertical * moveSpeed;
 
             characterController.Move(playerVelocity * Time.deltaTime); //new Vector3(joystick.Horizontal * moveSpeed, 0, joystick.Vertical * moveSpeed) * Time.deltaTime);
+        }
+        else
+        {
+            inMovement = false;
         }
     }
 
