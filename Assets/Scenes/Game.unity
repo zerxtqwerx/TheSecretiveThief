@@ -328,6 +328,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280078034}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &328365599 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6877080883739225683, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+  m_PrefabInstance: {fileID: 1321456066}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &328365601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328365599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda3c92f26af0c04ca98b3089ce5c520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skinsTag: playerSkins
+  buttonPrefab: {fileID: 0}
 --- !u!114 &341926508 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5678976013117948244, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
@@ -1513,6 +1532,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6556853822124154492, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556853822124154492, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556853822124154492, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6654292083086172214, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1524,6 +1555,10 @@ PrefabInstance:
     - target: {fileID: 6877080883960774077, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080884419607390, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.000012464115
       objectReference: {fileID: 0}
     - target: {fileID: 6877080884964489201, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_Sprite
@@ -1649,10 +1684,42 @@ PrefabInstance:
       propertyPath: RageFillImage
       value: 
       objectReference: {fileID: 341926508}
+    - target: {fileID: 6877080885252638247, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080885252638247, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080885252638247, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080885277943682, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080885277943682, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7464387155263884393, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 7951032616604088428, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: title
+      value: Skin "Thief"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951032616604088428, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: image.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951032616604088428, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: image.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: c603d5747c9e5ad40afba2b0ef24f563, type: 3}
     - target: {fileID: 8417804059919526144, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 0

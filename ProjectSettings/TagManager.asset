@@ -10,6 +10,7 @@ TagManager:
   - enemy
   - RageFill
   - lives
+  - playerSkins
   layers:
   - Default
   - TransparentFX

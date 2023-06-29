@@ -52,6 +52,12 @@ public class ManagerTimer : MonoBehaviour
         cam = Camera.main;   
         player = FindObjectOfType<PlayerMovement>();
         hp = GameObject.FindWithTag("lives").GetComponent<HP>();
+        Time.timeScale = 0;
+    }
+
+    public void TimeScale(float n)
+    {
+        Time.timeScale = n;
     }
     public void RageAddition()
     {
