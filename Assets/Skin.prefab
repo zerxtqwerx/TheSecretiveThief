@@ -215,6 +215,7 @@ MonoBehaviour:
   image: {fileID: 5348849818985116969}
   title: {fileID: 7762617306836656863}
   description: {fileID: 3358076337951690275}
+  skinNumber: 0
 --- !u!1 &8502219614553274400
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,6 +303,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3386405207295968883}
     m_Modifications:
+    - target: {fileID: 1916467617182209628, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916467617182209628, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916467617182209628, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: -7713172143963493237}
+    - target: {fileID: 1916467617182209628, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916467617182209628, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BuySkin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916467617182209628, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ShopElements, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916467617182209628, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3817220721726725063, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
       propertyPath: m_Color.b
       value: 0.5764706

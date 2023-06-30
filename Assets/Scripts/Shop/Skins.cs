@@ -14,6 +14,7 @@ public class Skins : MonoBehaviour
     [SerializeField] private List<string> description;
     [Space]
     [SerializeField] int countSkins;
+    [SerializeField] string characterLink;
 
     private void Awake()
     {
@@ -25,6 +26,8 @@ public class Skins : MonoBehaviour
             elementMeta.SetImage(this.image[i]);
             elementMeta.SetTitle(this.title[i]);
             elementMeta.SetDescription(this.description[i]);
+            elementMeta.SetSkinNumber(i);
+            elementMeta.SetCharacterLink(this.characterLink);
         }
     }
 }

@@ -6189,6 +6189,7 @@ MonoBehaviour:
   title: []
   description: []
   countSkins: 4
+  characterLink: player
 --- !u!1 &6877080884782976547
 GameObject:
   m_ObjectHideFlags: 0
@@ -8026,6 +8027,7 @@ MonoBehaviour:
   - ' 560 $'
   - 700 $
   countSkins: 0
+  characterLink: enemy
 --- !u!1 &6877080885205267577
 GameObject:
   m_ObjectHideFlags: 0

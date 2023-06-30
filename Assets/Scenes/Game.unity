@@ -818,6 +818,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2595715242526538690, guid: 818810597cad9664e8bf08c331e065b5, type: 3}
+      propertyPath: m_TagString
+      value: playerSkins
+      objectReference: {fileID: 0}
     - target: {fileID: 5898004825018198929, guid: 818810597cad9664e8bf08c331e065b5, type: 3}
       propertyPath: m_CullingMode
       value: 1
@@ -1433,6 +1437,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 3863310832025035984, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: countSkins
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863310832025035984, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: description.Array.data[2]
+      value: 560 $
+      objectReference: {fileID: 0}
     - target: {fileID: 5295030746432125460, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_TagString
       value: Untagged
@@ -1549,7 +1561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6877080884419607390, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00015180907
+      value: -0.00007353418
       objectReference: {fileID: 0}
     - target: {fileID: 6877080884964489201, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_Sprite
@@ -1695,6 +1707,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6877080885277943682, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7464387155263884393, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_TagString
       value: Untagged
@@ -1712,17 +1728,21 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7951032616604088428, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: image.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 923dd8e928c3d104293a2395cef4945d, type: 3}
+    - target: {fileID: 7951032616604088428, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: image.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: b625ada8da245dc40be897675b062b9f, type: 3}
+      objectReference: {fileID: 21300000, guid: a8ba53b809584174696530071e96b449, type: 3}
     - target: {fileID: 7951032616604088428, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: image.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: 8387fc8bd31de9b4fb3bf281e9b944ea, type: 3}
+      objectReference: {fileID: 21300000, guid: ece0c9fc867c2ec428a082fe2d407fb4, type: 3}
     - target: {fileID: 7951032616604088428, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: image.Array.data[3]
       value: 
-      objectReference: {fileID: 21300000, guid: 225c27b1e8d4a4b409cd8361a77a6058, type: 3}
+      objectReference: {fileID: 21300000, guid: b5499a0218e751540b3db70374a17865, type: 3}
     - target: {fileID: 7951032616604088428, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: title.Array.data[0]
       value: Thief
