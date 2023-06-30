@@ -9,8 +9,9 @@ public class Skins : MonoBehaviour
     [SerializeField] private GameObject prefab;
 
     [Header("Settings")]
-    [SerializeField] private string title;
     [SerializeField] private List<Sprite> image;
+    [SerializeField] private List<string> title;
+    [SerializeField] private List<string> description;
     [Space]
     [SerializeField] int countSkins;
 
@@ -21,8 +22,9 @@ public class Skins : MonoBehaviour
             GameObject element = this.shopView.Add(this.prefab);
             ShopElements elementMeta = element.GetComponent<ShopElements>();
 
-            elementMeta.SetTitle(this.title + i);
             elementMeta.SetImage(this.image[i]);
+            elementMeta.SetTitle(this.title[i]);
+            elementMeta.SetDescription(this.description[i]);
         }
     }
 }
