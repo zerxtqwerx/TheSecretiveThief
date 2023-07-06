@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8011146543887536708}
   m_Layer: 0
   m_Name: MoneyManager
-  m_TagString: Untagged
+  m_TagString: money
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,3 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7310407eeeb51294f96865df0db0213e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amountOfMoney: {fileID: 0}
+  collectedLevelMoney: {fileID: 0}

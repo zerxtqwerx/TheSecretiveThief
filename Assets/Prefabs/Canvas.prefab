@@ -6185,9 +6185,20 @@ MonoBehaviour:
   shopView: {fileID: 6293017938255609010}
   prefab: {fileID: 7857484532376205302, guid: 818bbd47e06cf7148b2adaa165a452bd, type: 3}
   image:
-  - {fileID: 21300000, guid: 503270266eeba454d96238fef87860ef, type: 3}
-  title: []
-  description: []
+  - {fileID: 21300000, guid: 923dd8e928c3d104293a2395cef4945d, type: 3}
+  - {fileID: 21300000, guid: a8ba53b809584174696530071e96b449, type: 3}
+  - {fileID: 21300000, guid: ece0c9fc867c2ec428a082fe2d407fb4, type: 3}
+  - {fileID: 21300000, guid: b5499a0218e751540b3db70374a17865, type: 3}
+  title:
+  - Thief
+  - Blue Boy
+  - Huggy Wuggy
+  - Orange
+  description:
+  - 
+  - 150
+  - 350
+  - 700
   countSkins: 4
   characterLink: player
 --- !u!1 &6877080884782976547
@@ -8021,11 +8032,7 @@ MonoBehaviour:
   - NPC 2
   - NPC 3
   - NPC 4
-  description:
-  - 130 $
-  - 240 $
-  - ' 560 $'
-  - 700 $
+  description: []
   countSkins: 0
   characterLink: enemy
 --- !u!1 &6877080885205267577

@@ -1412,6 +1412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoneyManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1696988635493059931, guid: 24deb6942b39a3a4bb3f35e95a4aa076, type: 3}
+      propertyPath: m_TagString
+      value: money
+      objectReference: {fileID: 0}
     - target: {fileID: 8011146543887536708, guid: 24deb6942b39a3a4bb3f35e95a4aa076, type: 3}
       propertyPath: amountOfMoney
       value: 
@@ -1765,19 +1769,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7951032616604088428, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: description.Array.data[0]
-      value: 100 $
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7951032616604088428, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: description.Array.data[1]
-      value: 250 $
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 7951032616604088428, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: description.Array.data[2]
-      value: 400 $
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 7951032616604088428, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: description.Array.data[3]
-      value: 1000 $
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 8417804059919526144, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -6892,6 +6896,10 @@ PrefabInstance:
     - target: {fileID: 7803611498180899279, guid: 640db6ff3b12fe641823d06024994c7b, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803611498180899279, guid: 640db6ff3b12fe641823d06024994c7b, type: 3}
+      propertyPath: m_TagString
+      value: enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 640db6ff3b12fe641823d06024994c7b, type: 3}

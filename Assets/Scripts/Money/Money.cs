@@ -9,13 +9,14 @@ public class Money : MonoBehaviour
     public Text collectedLevelMoney;
 
     static private int currentMoney;
+    private int collectedMoneyOnThisLevel;
+
     public int GetMoney() { return currentMoney; }
     public void SetMoney(int n) { currentMoney = n; }
 
-    private int collectedMoneyOnThisLevel;
-
     private void Start()
     {
+        currentMoney = 10000;
         ShowCurrentAmount();
     }
 
@@ -47,5 +48,16 @@ public class Money : MonoBehaviour
     public void DeleteCollectedMoney()
     {
         collectedMoneyOnThisLevel = 0;
+    }
+
+    public bool PurchasingPermission(int price)
+    {
+        if (currentMoney >= price)
+        {
+            Debug.Log("da");
+            return true;
+        }
+        return false;
+        //return currentMoney >= price;
     }
 }

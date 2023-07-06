@@ -28,6 +28,7 @@ public class Skins : MonoBehaviour
             elementMeta.SetDescription(this.description[i]);
             elementMeta.SetSkinNumber(i);
             elementMeta.SetCharacterLink(this.characterLink);
+            elementMeta.ActivatingButton();
         }
     }
 }

@@ -215,7 +215,7 @@ MonoBehaviour:
   image: {fileID: 5348849818985116969}
   title: {fileID: 7762617306836656863}
   description: {fileID: 3358076337951690275}
-  skinNumber: 0
+  button: {fileID: 15079137529000914}
 --- !u!1 &8502219614553274400
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,9 +345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5167400671652055731, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
       propertyPath: m_Text
-      value: 'Buy
-
-'
+      value: Buy
       objectReference: {fileID: 0}
     - target: {fileID: 5167400671652055731, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
       propertyPath: m_Color.b
@@ -363,11 +361,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5167400671652055731, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
       propertyPath: m_FontData.m_MaxSize
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5167400671652055731, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
       propertyPath: m_FontData.m_MinSize
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5167400671652055731, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -375,7 +373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5167400671652055731, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
       propertyPath: m_FontData.m_Alignment
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6207945595193520182, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
       propertyPath: m_Name
@@ -467,6 +465,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
+--- !u!114 &15079137529000914 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1916467617182209628, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
+  m_PrefabInstance: {fileID: 1922257768769660302}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &7570893163372435938 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8339554327328685164, guid: 0707d54dcac39b144a55adcf802f0d5d, type: 3}
