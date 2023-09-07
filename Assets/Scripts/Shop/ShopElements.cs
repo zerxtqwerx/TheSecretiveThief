@@ -31,6 +31,7 @@ public class ShopElements : MonoBehaviour
 
     public void ActivatingButton()
     {
+        ButtonController bc = new ButtonController();
         int price = 0;
         int.TryParse(description.text, out price);
 
@@ -41,22 +42,24 @@ public class ShopElements : MonoBehaviour
 
         if (!character.transform.GetChild(skinNumber).GetComponent<IsSkinBuyed>().IsBuyed())
         {
-            ChangeColorButton("red");
             if (!money.PurchasingPermission(price)) 
             {
-                InsufficientFundsButton();
+                bc.EditButton(ref button, false, "Inficient funds", "red");
+            }
+            else
+            {
+                bc.EditButton(ref button, true, "Buy", "blue");
             }
         }
         else
         {
-            ChangeColorButton("blue");
             if (character.transform.GetChild(skinNumber).gameObject.activeSelf == true)
             {
-                CurrentSkinButton();
+                bc.EditButton(ref button, false, "Current skin", "blue");
             }
             else
             {
-                ApplySkinButton();
+                bc.EditButton(ref button, true, "Apply skin", "blue");
             }
         }
     }
@@ -80,7 +83,7 @@ public class ShopElements : MonoBehaviour
         }
     }
     
-    private void ApplySkinButton()
+   /* private void ApplySkinButton()
     {
         button.GetComponentInChildren<Text>().text = "Apply skin";
         button.enabled = true;
@@ -112,7 +115,6 @@ public class ShopElements : MonoBehaviour
             image.color = new Color(0.157f, 0.5f, 0.67f);
         }
         
-    }
-
+    }*/
     //сделать НОРМАЛЬНЫЙ КОД переделать цвета, считывать деньги
 }

@@ -61,7 +61,7 @@ public class ManagerTimer : MonoBehaviour
     }
     public void RageAddition()
     {
-        RageFillSeconds += Time.deltaTime * 2;
+        RageFillSeconds += Time.deltaTime * 3;
         isRage = true;
     }
 
@@ -145,7 +145,7 @@ public class ManagerTimer : MonoBehaviour
             itemsAmount = 0;
 
             money.AddMoneyOnFinishLevel();
-            EditorApplication.isPaused = true;
+            Debug.Break();
             ShowWinPanel();
             ShowSelectLevel();
 
