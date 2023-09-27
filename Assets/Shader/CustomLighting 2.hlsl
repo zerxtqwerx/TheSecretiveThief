@@ -90,7 +90,7 @@ float3 CustomLightHandling(CustomLightingData d, Light light, bool edgeignore = 
     }
     else
     {
-        if (light.distanceAttenuation > d.lightedge)
+        if (light.distanceAttenuation * light.shadowAttenuation > d.lightedge)
             color = d.albedo;
         else
             color = float3(0, 0, 0);
