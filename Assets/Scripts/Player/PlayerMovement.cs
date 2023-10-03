@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         managerTimer = FindObjectOfType<ManagerTimer>();
         characterController = GetComponent<CharacterController>();
-        startPosition = tr.position;
+        startPosition = transform.position;
         Debug.Log(startPosition);
     }
 
@@ -64,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void MovePlayerToStartLevel()
     {
-        tr.position = startPosition;
+        transform.position = startPosition;
     }
 
     private void OnTriggerEnter(Collider other)

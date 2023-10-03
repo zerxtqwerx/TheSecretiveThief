@@ -21,18 +21,21 @@ public class EnemyMovement : MonoBehaviour
     private bool isPlayerFind;
     private ManagerTimer managerTimer;
     public bool isPlayerBehindTheWall = true;
+    public string patrolTag;
 
 
     void Start()
     {
         managerTimer = FindObjectOfType<ManagerTimer>();
         agent = GetComponent<NavMeshAgent>();
-        for (int i = 0; i < transform.childCount; i++)
+
+        GameObject patrolPoints = GameObject.FindGameObjectWithTag(patrolTag);
+        for (int i = 0; i < patrolPoints.transform.childCount; i++)
         {
-            posMovement.Add(transform.GetChild(i).transform.position);
+            posMovement.Add(patrolPoints.transform.GetChild(i).transform.position);
         }
         player = GameObject.FindGameObjectWithTag("player");
-
+        Debug.Log(posMovement.Count);
     }
 
 

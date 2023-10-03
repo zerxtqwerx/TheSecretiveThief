@@ -12,6 +12,10 @@ TagManager:
   - lives
   - playerSkins
   - money
+  - PatrolPoints
+  - PatrolPoints1
+  - PatrolPoints2
+  - PatrolPoints3
   layers:
   - Default
   - TransparentFX
