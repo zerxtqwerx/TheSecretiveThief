@@ -7066,6 +7066,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 821760192}
+    - target: {fileID: 7803611498180899277, guid: 640db6ff3b12fe641823d06024994c7b, type: 3}
+      propertyPath: patrolTag
+      value: PatrolPoints
+      objectReference: {fileID: 0}
     - target: {fileID: 7803611498180899279, guid: 640db6ff3b12fe641823d06024994c7b, type: 3}
       propertyPath: m_Name
       value: Enemy
