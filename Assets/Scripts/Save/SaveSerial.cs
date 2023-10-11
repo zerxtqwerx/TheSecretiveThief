@@ -94,7 +94,7 @@ public class SaveSerial : MonoBehaviour
             Debug.Log("game data loaded");
         }
         else
-            Debug.LogError("no save data");
+            Debug.LogError("failed to save data");
     }
 }
 

@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8141418413768192007}
   - component: {fileID: 7503492961717140957}
   - component: {fileID: 8944628133840182894}
-  - component: {fileID: 4854045538129866961}
   - component: {fileID: 469442359378416838}
   - component: {fileID: 5653332477242148229}
+  - component: {fileID: 8547426916621325979}
   m_Layer: 3
   m_Name: EnemyBlack
   m_TagString: Untagged
@@ -102,27 +102,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4854045538129866961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 245382371765843969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85a4daa6e6b2c7745825f7d4cceead15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDistanceToFind: 7
-  timeToFindAfterDisappearance: 3
-  layerWithoutPeople:
-    serializedVersion: 2
-    m_Bits: 55
-  time: 0
-  isPlayerBehindTheWall: 1
-  patrolTag: 
-  isBlack: 1
 --- !u!195 &469442359378416838
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -157,6 +136,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b839078a0f46834ea6b39778d435c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8547426916621325979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245382371765843969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 128d4491284d04f4b98397cd953a398f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistanceToFind: 7
+  timeToFindAfterDisappearance: 3
+  layerWithoutPeople:
+    serializedVersion: 2
+    m_Bits: 0
+  time: 0
+  isPlayerBehindTheWall: 1
+  patrolTag: 
 --- !u!1 &6052073741102446424
 GameObject:
   m_ObjectHideFlags: 0

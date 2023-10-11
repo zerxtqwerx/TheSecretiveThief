@@ -5,12 +5,11 @@ using UnityEngine.AI;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class EnemyMovement : MonoBehaviour
+public class EnemyBlack : MonoBehaviour
 {
     [SerializeField] private float maxDistanceToFind = 7f;
     [SerializeField] private float timeToFindAfterDisappearance = 3f;
     public LayerMask layerWithoutPeople;
-    //d�
 
     private UnityEngine.AI.NavMeshAgent agent;
     private List<Vector3> posMovement = new List<Vector3>();
@@ -28,6 +27,9 @@ public class EnemyMovement : MonoBehaviour
     public bool isPlayerBehindTheWall = true;
     public string patrolTag;
 
+    LightOnPlayer lop;
+    GameObject[] enemies;
+
     void Start()
     {
         managerTimer = FindObjectOfType<ManagerTimer>();
@@ -39,6 +41,10 @@ public class EnemyMovement : MonoBehaviour
             posMovement.Add(patrolPoints.transform.GetChild(i).transform.position);
         }
         player = GameObject.FindGameObjectWithTag("player");
+        lop = GetComponent<LightOnPlayer>();
+
+        enemies = GameObject.FindGameObjectsWithTag("enemy");
+        Debug.Log(enemies.Length);
     }
 
 
@@ -81,6 +87,8 @@ public class EnemyMovement : MonoBehaviour
             if (IsNormalDistance() == true)
             {
                 GoToPlayer();
+                lop.TurnOnLight();
+                UniversalPlayerSearch();
             }
         }
         else
@@ -107,11 +115,9 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-
     private void GoToPlayer()
     {
         agent.SetDestination(player.transform.position);
-        Debug.Log("search");
     }
 
     private void Timer()
@@ -121,11 +127,50 @@ public class EnemyMovement : MonoBehaviour
         {
             isTime = false;
             isPlayerFind = false;
+
+            if (normalDistance > 1)
+            {
+                lop.TurnOffLight();
+                StopUniversalSearchController();
+            }
+        }
+    }
+
+    private void UniversalPlayerSearch()
+    {
+        foreach (GameObject enemy in enemies)
+        {
+            var em = enemy.GetComponent<EnemyMovement>();
+            if(em != null)
+            {
+                em.UniversalSearch();
+            }
+            else
+            {
+                enemy.GetComponent<EnemyBlack>().UniversalSearch();
+            }
+        }
+    }
+
+    private void StopUniversalSearchController()
+    {
+        foreach (GameObject enemy in enemies)
+        {
+            var em = enemy.GetComponent<EnemyMovement>();
+            if (em != null)
+            {
+                em.StopUniversalSearch();
+            }
+            else
+            {
+                enemy.GetComponent<EnemyBlack>().StopUniversalSearch();
+            }
         }
     }
 
     public void UniversalSearch()
     {
+        //не работает
         normalDistance = 1.25f;
         isPlayerFind = true;
         Debug.Log("A");
@@ -139,4 +184,3 @@ public class EnemyMovement : MonoBehaviour
     }
 }
    
-
