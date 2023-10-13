@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3607119232945193198
+--- !u!114 &-8220813085257596747
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dark steel Material
+  m_Name: Material.002
   m_Shader: {fileID: -6465566751694194690, guid: f0f429ab5c239e3428b28a2d2594dc30, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -107,27 +107,29 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _GlossMapScale: 0
-    - _Glossiness: 0
-    - _GlossyReflections: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.4212598
+    - _GlossyReflections: 1
     - _Lightedge: 0
-    - _Metallic: 1
-    - _NormalStrength: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _NormalStrength: 0
     - _OcclusionStrength: 1
-    - _Parallax: 0.005
+    - _Parallax: 0.02
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 1
+    - _Smoothness: 0.4212598
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
+    - _UVSec: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.3137255, g: 0.3137255, b: 0.3137255, a: 1}
-    - _Color: {r: 0.31372547, g: 0.31372547, b: 0.31372547, a: 1}
+    - _BaseColor: {r: 0.746659, g: 0.52608323, b: 0.32793418, a: 1}
+    - _Color: {r: 0.746659, g: 0.52608323, b: 0.32793415, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
