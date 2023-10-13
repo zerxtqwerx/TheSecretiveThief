@@ -7082,6 +7082,30 @@ PrefabInstance:
       propertyPath: m_TagString
       value: enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7803611498191757021, guid: 640db6ff3b12fe641823d06024994c7b, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803611498191757021, guid: 640db6ff3b12fe641823d06024994c7b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.908046
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803611498191757021, guid: 640db6ff3b12fe641823d06024994c7b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803611498191757021, guid: 640db6ff3b12fe641823d06024994c7b, type: 3}
+      propertyPath: m_Intensity
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803611498191757021, guid: 640db6ff3b12fe641823d06024994c7b, type: 3}
+      propertyPath: m_SpotAngle
+      value: 70.588036
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803611498191757021, guid: 640db6ff3b12fe641823d06024994c7b, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 70.588036
+      objectReference: {fileID: 0}
     - target: {fileID: 7803611498191757022, guid: 640db6ff3b12fe641823d06024994c7b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 16.26
