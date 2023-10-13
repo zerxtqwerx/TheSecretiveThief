@@ -1114,10 +1114,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: FFolder 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1687885721703794045, guid: 1bd12950a32687e4982546e9688d4fc2, type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9794b869af21e4541a2d47cecae126b0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bd12950a32687e4982546e9688d4fc2, type: 3}
 --- !u!1 &705507993
