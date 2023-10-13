@@ -152,7 +152,7 @@ MonoBehaviour:
   timeToFindAfterDisappearance: 3
   layerWithoutPeople:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 55
   time: 0
   isPlayerBehindTheWall: 1
   patrolTag: 
