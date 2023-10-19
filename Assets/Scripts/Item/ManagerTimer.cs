@@ -76,7 +76,6 @@ public class ManagerTimer : MonoBehaviour
         RageFillImage.fillAmount = RageFillSeconds / secondsToGrab;
         if (RageFillSeconds >= secondsToGrab)
         {
-            //Debug.Log("died = " + died);
             RageFillImage.fillAmount = 0;
             hp.MinusHP();
 
@@ -184,7 +183,6 @@ public class ManagerTimer : MonoBehaviour
             player.isMove = true;
             isTaking = false;
             PickItem();
-            Debug.Log("takeitem");
         }
     }
 

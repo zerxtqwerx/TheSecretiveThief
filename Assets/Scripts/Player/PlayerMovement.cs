@@ -25,7 +25,6 @@ public class PlayerMovement : MonoBehaviour
         managerTimer = FindObjectOfType<ManagerTimer>();
         characterController = GetComponent<CharacterController>();
         startPosition = transform.position;
-        Debug.Log(startPosition);
     }
 
     void Update()
