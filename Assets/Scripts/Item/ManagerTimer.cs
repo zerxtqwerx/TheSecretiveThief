@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEditor;
-
-
+using UnityEngine.Advertisements;
 
 public class ManagerTimer : MonoBehaviour
 {
@@ -53,6 +52,10 @@ public class ManagerTimer : MonoBehaviour
         player = FindObjectOfType<PlayerMovement>();
         hp = GameObject.FindWithTag("lives").GetComponent<HP>();
         Time.timeScale = 0;
+        if (Advertisement.isSupported)
+        {
+            Advertisement.Initialize("5444950", false);
+        }
     }
 
     public void TimeScale(float n)
@@ -82,6 +85,8 @@ public class ManagerTimer : MonoBehaviour
                 //ui controller
                 gameOver.SetActive(true);
                 selectLevel.SetActive(true);
+                if (Advertisement.isInitialized)
+                    Advertisement.Show("Interstitial_Android");
             }
             else
             {
