@@ -34,20 +34,6 @@ public class ShopElements : MonoBehaviour
     public void SetSkinNumber(int skinNumber_) => skinNumber = skinNumber_;
     public void SetCharacterLink(string characterLink_) => characterLink = characterLink_;
 
-    /*void Start()
-    {
-        bc = new ButtonController();
-
-        character = GameObject.FindWithTag(characterLink);
-        character.transform.GetChild(skinNumber).GetComponent<IsSkinBuyed>().IsBuyed();
-        GameObject moneyObject = GameObject.FindWithTag("money");
-        money = moneyObject.GetComponent<Money>();
-
-        price = 0;
-        int.TryParse(description.text, out price);
-
-    }*/
-
     void Update()
     {
         if (!character.transform.GetChild(skinNumber).GetComponent<IsSkinBuyed>().IsBuyed())
@@ -119,7 +105,6 @@ public class ShopElements : MonoBehaviour
             {
                 currentSkin = character.transform.GetChild(i).gameObject;
                 currentSkin.SetActive(false);
-                Debug.Log(i);
                 break;
             }
         }
@@ -138,38 +123,4 @@ public class ShopElements : MonoBehaviour
             }
         }
     }
-
-    /*private void ApplySkinButton()
-    {
-        button.GetComponentInChildren<Text>().text = "Apply skin";
-        button.enabled = true;
-    }
-
-    private void InsufficientFundsButton()
-    {
-        button.enabled = false;
-        ChangeColorButton("blue");
-        button.GetComponentInChildren<Text>().text = "Insufficient funds";
-    }
-
-    private void CurrentSkinButton()
-    {
-        button.GetComponentInChildren<Text>().text = "Current skin";
-        button.enabled = false;
-    }
-
-    private void ChangeColorButton(string nameColor)
-    {
-        Image image = button.GetComponent<Image>();
-
-        if (nameColor == "blue")
-        {
-            image.color = new Color(0.25f, 0.16f, 0.147f);
-        }
-        else if (nameColor == "red")
-        {
-            image.color = new Color(0.157f, 0.5f, 0.67f);
-        }
-
-    }*/
 }
