@@ -16,6 +16,11 @@ public class ShopElements : MonoBehaviour
     private string characterLink;
     private GameObject character;
     private Money money;
+    ButtonController bc;
+    int price;
+    ISwitchSkin iss;
+    GameObject currentSkin;
+    GameObject skin;
 
     public float Width() => this.rectTransform.rect.width;
     public float Height() => rectTransform.rect.height;
@@ -29,37 +34,79 @@ public class ShopElements : MonoBehaviour
     public void SetSkinNumber(int skinNumber_) => skinNumber = skinNumber_;
     public void SetCharacterLink(string characterLink_) => characterLink = characterLink_;
 
-    public void ActivatingButton()
+    /*void Start()
     {
-        ButtonController bc = new ButtonController();
-        int price = 0;
-        int.TryParse(description.text, out price);
+        bc = new ButtonController();
 
         character = GameObject.FindWithTag(characterLink);
         character.transform.GetChild(skinNumber).GetComponent<IsSkinBuyed>().IsBuyed();
         GameObject moneyObject = GameObject.FindWithTag("money");
         money = moneyObject.GetComponent<Money>();
 
+        price = 0;
+        int.TryParse(description.text, out price);
+
+    }*/
+
+    void Update()
+    {
         if (!character.transform.GetChild(skinNumber).GetComponent<IsSkinBuyed>().IsBuyed())
         {
-            if (!money.PurchasingPermission(price)) 
+            if (!money.PurchasingPermission(price))
             {
-                bc.EditButton(ref button, false, "Inficient funds", "red");
+                bc.EditButton(button, false, "Inficient funds", "red");
             }
             else
             {
-                bc.EditButton(ref button, true, "Buy", "blue");
+                bc.EditButton(button, true, "Buy", "blue");
             }
         }
         else
         {
             if (character.transform.GetChild(skinNumber).gameObject.activeSelf == true)
             {
-                bc.EditButton(ref button, false, "Current skin", "blue");
+                bc.EditButton(button, false, "Current skin", "blue");
             }
             else
             {
-                bc.EditButton(ref button, true, "Apply skin", "blue");
+                bc.EditButton(button, true, "Apply skin", "blue");
+            }
+        }
+    }
+
+    public void ActivatingButton()
+    {
+        bc = new ButtonController();
+        iss = new ISwitchSkin();
+
+        character = GameObject.FindWithTag(characterLink);
+        character.transform.GetChild(skinNumber).GetComponent<IsSkinBuyed>().IsBuyed();
+        GameObject moneyObject = GameObject.FindWithTag("money");
+        money = moneyObject.GetComponent<Money>();
+
+        price = 0;
+        int.TryParse(description.text, out price);
+
+        if (!character.transform.GetChild(skinNumber).GetComponent<IsSkinBuyed>().IsBuyed())
+        {
+            if (!money.PurchasingPermission(price)) 
+            {
+                bc.EditButton(button, false, "Inficient funds", "red");
+            }
+            else
+            {
+                bc.EditButton(button, true, "Buy", "blue");
+            }
+        }
+        else
+        {
+            if (character.transform.GetChild(skinNumber).gameObject.activeSelf == true)
+            {
+                bc.EditButton(button, false, "Current skin", "blue");
+            }
+            else
+            {
+                bc.EditButton(button, true, "Apply skin", "blue");
             }
         }
     }
@@ -70,20 +117,29 @@ public class ShopElements : MonoBehaviour
         {
             if (character.transform.GetChild(i).gameObject.activeSelf == true)
             {
-                GameObject currentSkin = character.transform.GetChild(i).gameObject;
+                currentSkin = character.transform.GetChild(i).gameObject;
                 currentSkin.SetActive(false);
+                Debug.Log(i);
+                break;
             }
-            if(i == skinNumber)
+        }
+        for (int i = 0; i < character.transform.childCount; i++)
+        {
+            if (i == skinNumber)
             {
-                GameObject skin = character.transform.GetChild(skinNumber).gameObject;
-                skin.GetComponent<IsSkinBuyed>().BuySkin();
+                skin = character.transform.GetChild(skinNumber).gameObject;
+                if (!skin.GetComponent<IsSkinBuyed>().IsBuyed())
+                {
+                    skin.GetComponent<IsSkinBuyed>().BuySkin();
+                    money.ChangeAmountOfMoney(-price);
+                }
                 skin.SetActive(true);
-                ActivatingButton();
+                break;
             }
         }
     }
-    
-   /* private void ApplySkinButton()
+
+    /*private void ApplySkinButton()
     {
         button.GetComponentInChildren<Text>().text = "Apply skin";
         button.enabled = true;
@@ -106,15 +162,14 @@ public class ShopElements : MonoBehaviour
     {
         Image image = button.GetComponent<Image>();
 
-        if(nameColor == "blue")
+        if (nameColor == "blue")
         {
             image.color = new Color(0.25f, 0.16f, 0.147f);
         }
-        else if(nameColor == "red")
+        else if (nameColor == "red")
         {
             image.color = new Color(0.157f, 0.5f, 0.67f);
         }
-        
+
     }*/
-    //сделать НОРМАЛЬНЫЙ КОД переделать цвета, считывать деньги
 }

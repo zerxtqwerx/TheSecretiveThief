@@ -16,7 +16,7 @@ public class Money : MonoBehaviour
 
     private void Start()
     {
-        currentMoney = 10000;
+        currentMoney = 1000;
         ShowCurrentAmount();
     }
 
@@ -54,7 +54,6 @@ public class Money : MonoBehaviour
     {
         if (currentMoney >= price)
         {
-            Debug.Log("da");
             return true;
         }
         return false;

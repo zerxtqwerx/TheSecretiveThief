@@ -15,4 +15,5 @@ public class IsSkinBuyed : MonoBehaviour
     {
         isSkinBuyed = true;
     }
+
 }

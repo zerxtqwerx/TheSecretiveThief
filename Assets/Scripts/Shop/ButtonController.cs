@@ -5,16 +5,14 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
-    //private Button button;
-
-    public void EditButton(ref Button button, bool enabled, string sign, string colorName)
+    public void EditButton(Button button, bool enabled, string sign, string colorName)
     {
-        ChangeEnabled(ref button, enabled);
-        ChangeSign(ref button, sign);
-        ChangeColor(ref button, colorName);
+        ChangeEnabled(button, enabled);
+        ChangeSign(button, sign);
+        ChangeColor(button, colorName);
     }
 
-    private void ChangeColor(ref Button button, string colorName)
+    private void ChangeColor(Button button, string colorName)
     {
         if (colorName == "Blue")
         {
@@ -26,13 +24,13 @@ public class ButtonController : MonoBehaviour
         }
     }
 
-    private void ChangeEnabled(ref Button button, bool enabled)
+    private void ChangeEnabled(Button button, bool enabled)
     {
         button.enabled = enabled;
     }
 
-    private void ChangeSign(ref Button button, string sign)
+    private void ChangeSign(Button button, string sign)
     {
-        button.GetComponent<Text>().text = sign;
+        button.GetComponentInChildren<Text>().text = sign;
     }
 }

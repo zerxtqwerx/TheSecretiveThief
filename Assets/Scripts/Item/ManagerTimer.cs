@@ -135,6 +135,7 @@ public class ManagerTimer : MonoBehaviour
 
     private void OutLevel()
     {
+        RageFillImage.fillAmount = 0;
         player.isMove = false;
         time -= Time.deltaTime;
         timerObj.fillAmount = time / timeToOut;
