@@ -44,7 +44,6 @@ public class EnemyBlack : MonoBehaviour
         lop = GetComponent<LightOnPlayer>();
 
         enemies = GameObject.FindGameObjectsWithTag("enemy");
-        Debug.Log(enemies.Length);
     }
 
 
@@ -173,14 +172,12 @@ public class EnemyBlack : MonoBehaviour
         //не работает
         normalDistance = 1.25f;
         isPlayerFind = true;
-        Debug.Log("A");
     }
 
     public void StopUniversalSearch()
     {
         normalDistance = 1f;
         isPlayerFind = false;
-        Debug.Log("stop");
     }
 }
    

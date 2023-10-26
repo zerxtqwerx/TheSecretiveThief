@@ -111,7 +111,6 @@ public class EnemyMovement : MonoBehaviour
     private void GoToPlayer()
     {
         agent.SetDestination(player.transform.position);
-        Debug.Log("search");
     }
 
     private void Timer()
@@ -128,14 +127,13 @@ public class EnemyMovement : MonoBehaviour
     {
         normalDistance = 1.25f;
         isPlayerFind = true;
-        Debug.Log("A");
+
     }
 
     public void StopUniversalSearch()
     {
         normalDistance = 1f;
         isPlayerFind = false;
-        Debug.Log("stop");
     }
 }
    

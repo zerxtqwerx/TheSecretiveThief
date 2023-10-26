@@ -13,7 +13,7 @@ public class LightOnPlayer : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("player");
-        light = player.transform.GetChild(1).GetComponent<Light>();
+        light = player.transform.GetChild(3).GetComponent<Light>();
         light.enabled = false;
     }
 
