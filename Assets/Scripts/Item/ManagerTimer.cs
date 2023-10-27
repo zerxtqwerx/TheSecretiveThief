@@ -8,7 +8,6 @@ using UnityEngine.Advertisements;
 
 public class ManagerTimer : MonoBehaviour
 {
-    SaveSerial saveSerial = new SaveSerial();
     [SerializeField] private Image timer;
     [SerializeField] Image[] itemSlots;
     int countLives;
@@ -81,7 +80,6 @@ public class ManagerTimer : MonoBehaviour
 
             if (died == 2)
             { 
-                //ui controller
                 gameOver.SetActive(true);
                 selectLevel.SetActive(true);
                 if (Advertisement.isInitialized)
@@ -89,7 +87,6 @@ public class ManagerTimer : MonoBehaviour
             }
             else
             {
-                //сломано
                 RageFillSeconds = 0;
                 player.MovePlayerToStartLevel();
                 died += 1;
@@ -150,11 +147,10 @@ public class ManagerTimer : MonoBehaviour
             itemsAmount = 0;
 
             money.AddMoneyOnFinishLevel();
-            Debug.Break();
+            Time.timeScale = 0;
             ShowWinPanel();
             ShowSelectLevel();
 
-            saveSerial.SaveGame();
         }
     }
 

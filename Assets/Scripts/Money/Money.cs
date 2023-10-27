@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Money : MonoBehaviour
+public class Money : MonoBehaviour, IDataSave
 {
     public Text amountOfMoney;
     public Text collectedLevelMoney;
 
-    static private int currentMoney;
+    private int currentMoney;
     private int collectedMoneyOnThisLevel;
 
     public int GetMoney() { return currentMoney; }
@@ -16,7 +16,7 @@ public class Money : MonoBehaviour
 
     private void Start()
     {
-        currentMoney = 1000;
+        currentMoney = 0;
         ShowCurrentAmount();
     }
 
@@ -58,5 +58,14 @@ public class Money : MonoBehaviour
         }
         return false;
         //return currentMoney >= price;
+    }
+    public void LoadData(GameData data)
+    {
+        this.currentMoney = data.money;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.money = this.currentMoney;
     }
 }

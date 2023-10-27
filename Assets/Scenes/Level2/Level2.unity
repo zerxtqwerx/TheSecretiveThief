@@ -22559,6 +22559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c96b1acbc22ad04d98973c88da2f27f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fileName: 
 --- !u!1 &862148825
 GameObject:
   m_ObjectHideFlags: 0
@@ -26946,6 +26947,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6877080883429138956, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 1660877309}
+    - target: {fileID: 6877080883429138956, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: changeScene
+      objectReference: {fileID: 0}
     - target: {fileID: 6877080883638314368, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -26958,9 +26967,25 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6877080883845067246, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 1660877309}
+    - target: {fileID: 6877080883845067246, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: changeScene
+      objectReference: {fileID: 0}
     - target: {fileID: 6877080883960774077, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080884045574651, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 1660877309}
+    - target: {fileID: 6877080884045574651, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: changeScene
       objectReference: {fileID: 0}
     - target: {fileID: 6877080884280382752, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_SizeDelta.x
@@ -26977,6 +27002,22 @@ PrefabInstance:
     - target: {fileID: 6877080884280382752, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080884500068675, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080884500068675, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 1660877309}
+    - target: {fileID: 6877080884500068675, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: changeScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080884500068675, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_TargetAssemblyTypeName
+      value: ChangeScene, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6877080884782976548, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_AnchoredPosition.y
