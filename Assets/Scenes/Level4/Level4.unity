@@ -6300,6 +6300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c96b1acbc22ad04d98973c88da2f27f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fileName: 
 --- !u!1 &808486120 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3229589200840977154, guid: 5d0eff98ad024ad4d917ff2b1f3df8e5, type: 3}
@@ -7542,6 +7543,10 @@ PrefabInstance:
     - target: {fileID: 6877080884419607390, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0.00008168213
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877080884804373128, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6877080885040526089, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_Name

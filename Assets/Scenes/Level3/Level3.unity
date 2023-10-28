@@ -849,6 +849,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6877080884804373128, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6877080885040526089, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -5048,6 +5052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c96b1acbc22ad04d98973c88da2f27f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fileName: 
 --- !u!1001 &1945634723
 PrefabInstance:
   m_ObjectHideFlags: 0
