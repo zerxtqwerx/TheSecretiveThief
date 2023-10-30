@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
-    private Text time;
     private Image heart1;
     private Image heart2;
     private Image heart3;
@@ -18,6 +17,6 @@ public class GameOver : MonoBehaviour
 
     void Awake()
     {
-        time.text = mt.GameTime() + "c";
+        //time.GetComponent<Text>().text = mt.GameTime() + "c";
     }
 }

@@ -18,11 +18,11 @@ public class IsSkinBuyed : MonoBehaviour, IDataSave
     }
     public void LoadData(GameData data)
     {
-        this.isSkinBuyed = data.unlockedSkins[index];
+        this.isSkinBuyed = data.skins[index];
     }
 
     public void SaveData(ref GameData data)
     {
-        data.unlockedSkins[index] = this.isSkinBuyed;
+        data.skins[index] = this.isSkinBuyed;
     }
 }

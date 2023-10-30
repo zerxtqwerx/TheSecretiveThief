@@ -51,12 +51,11 @@ public class DataSave : MonoBehaviour
         }
 
         Debug.Log("load money:" + gameData.money);
-        Debug.Log("load scene:" + gameData.sceneNumber);
-        Debug.Log("load currentSkin:" + gameData.currentSkin);
-        for(int i =0; i < 3; i++)
+        foreach (bool flag in gameData.skins)
         {
-            Debug.Log("load Skins:" + gameData.unlockedSkins[i]);
+            Debug.Log(flag);
         }
+
     }
 
     public void SaveGame()
@@ -66,12 +65,11 @@ public class DataSave : MonoBehaviour
             dataSaveObj.SaveData(ref gameData);
         }
         Debug.Log("save money:" + gameData.money);
-        Debug.Log("save scene:" + gameData.sceneNumber);
-        Debug.Log("save currentSkin:" + gameData.currentSkin);
-        for (int i = 0; i < 3; i++)
+        foreach(bool flag in gameData.skins)
         {
-            Debug.Log("save Skins:" + gameData.unlockedSkins[i]);
+            Debug.Log(flag);
         }
+        
 
         dataHandler.Save(gameData);
     }
@@ -95,19 +93,14 @@ public class GameData
 {
     public int sceneNumber;
     public int money;
-    public int currentSkin;
-    public Dictionary<int, bool> unlockedSkins;
+    public List<bool> skins;
+    
 
     public GameData()
     {
-        this.currentSkin = 0; 
-        this.sceneNumber = 0;
         this.money = 0;
-
-        this.unlockedSkins = new Dictionary<int, bool>();
-        this.unlockedSkins.Add(currentSkin, true);
-        this.unlockedSkins.Add(1, false);
-        this.unlockedSkins.Add(2, false);
+        skins = new List<bool> { true, false, false };
+        
     }
 }
 
