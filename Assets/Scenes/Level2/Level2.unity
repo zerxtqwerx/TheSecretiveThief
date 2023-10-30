@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5931,6 +5931,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: -5053925668127403250, guid: 327b565c00471f14fa1b8363bb271016, type: 3}
+    - target: {fileID: 1549474992887580583, guid: 96e71fd8dbfab5d45b898bfd04fd4921, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5a871d69b5cb6547836b459387d89d2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96e71fd8dbfab5d45b898bfd04fd4921, type: 3}
 --- !u!1 &215236119
@@ -14090,6 +14094,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: -8678823145569952518, guid: 327b565c00471f14fa1b8363bb271016, type: 3}
+    - target: {fileID: 1549474992887580583, guid: 96e71fd8dbfab5d45b898bfd04fd4921, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5a871d69b5cb6547836b459387d89d2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96e71fd8dbfab5d45b898bfd04fd4921, type: 3}
 --- !u!1 &522935867
@@ -18370,7 +18378,6 @@ GameObject:
   m_Component:
   - component: {fileID: 679080738}
   - component: {fileID: 679080737}
-  - component: {fileID: 679080736}
   - component: {fileID: 679080739}
   - component: {fileID: 679080740}
   - component: {fileID: 679080741}
@@ -18381,14 +18388,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &679080736
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 679080735}
-  m_Enabled: 1
 --- !u!20 &679080737
 Camera:
   m_ObjectHideFlags: 0
@@ -31187,6 +31186,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: -125435165217083709, guid: 327b565c00471f14fa1b8363bb271016, type: 3}
+    - target: {fileID: 1549474992887580583, guid: 96e71fd8dbfab5d45b898bfd04fd4921, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5a871d69b5cb6547836b459387d89d2, type: 2}
     - target: {fileID: 7320705306138208420, guid: 96e71fd8dbfab5d45b898bfd04fd4921, type: 3}
       propertyPath: m_Size.x
       value: 0.02
@@ -35794,6 +35797,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 3163171260390484736, guid: 327b565c00471f14fa1b8363bb271016, type: 3}
+    - target: {fileID: 1549474992887580583, guid: 96e71fd8dbfab5d45b898bfd04fd4921, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5a871d69b5cb6547836b459387d89d2, type: 2}
     - target: {fileID: 7320705306138208420, guid: 96e71fd8dbfab5d45b898bfd04fd4921, type: 3}
       propertyPath: m_Size.x
       value: 0.01
