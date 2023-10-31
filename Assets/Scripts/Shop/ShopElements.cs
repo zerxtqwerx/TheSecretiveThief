@@ -18,7 +18,7 @@ public class ShopElements : MonoBehaviour
     private Money money;
     ButtonController bc;
     int price;
-    ISwitchSkin iss;
+    //ISwitchSkin iss;
     GameObject currentSkin;
     GameObject skin;
 
@@ -63,7 +63,7 @@ public class ShopElements : MonoBehaviour
     public void ActivatingButton()
     {
         bc = new ButtonController();
-        iss = new ISwitchSkin();
+        //iss = new ISwitchSkin();
 
         character = GameObject.FindWithTag(characterLink);
         character.transform.GetChild(skinNumber).GetComponent<IsSkinBuyed>().IsBuyed();

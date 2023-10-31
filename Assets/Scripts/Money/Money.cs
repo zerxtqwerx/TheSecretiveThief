@@ -16,7 +16,7 @@ public class Money : MonoBehaviour, IDataSave
 
     private void Start()
     {
-        currentMoney = 1000;
+        currentMoney = 0;
         ShowCurrentAmount();
     }
 

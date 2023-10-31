@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IsSkinBuyed : MonoBehaviour, IDataSave
+public class IsSkinBuyed : MonoBehaviour//, IDataSave
 {
     [SerializeField] bool isSkinBuyed;
     [SerializeField] int index;
@@ -16,13 +16,15 @@ public class IsSkinBuyed : MonoBehaviour, IDataSave
     {
         isSkinBuyed = true;
     }
-    public void LoadData(GameData data)
+    /*public void LoadData(GameData data)
     {
         this.isSkinBuyed = data.skins[index];
+        Debug.Log("isb " + index + " " + isSkinBuyed);
     }
 
     public void SaveData(ref GameData data)
     {
         data.skins[index] = this.isSkinBuyed;
-    }
+        Debug.Log("isb " + index + " " + isSkinBuyed);
+    }*/
 }

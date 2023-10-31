@@ -51,11 +51,6 @@ public class DataSave : MonoBehaviour
         }
 
         Debug.Log("load money:" + gameData.money);
-        foreach (bool flag in gameData.skins)
-        {
-            Debug.Log(flag);
-        }
-
     }
 
     public void SaveGame()
@@ -65,12 +60,7 @@ public class DataSave : MonoBehaviour
             dataSaveObj.SaveData(ref gameData);
         }
         Debug.Log("save money:" + gameData.money);
-        foreach(bool flag in gameData.skins)
-        {
-            Debug.Log(flag);
-        }
         
-
         dataHandler.Save(gameData);
     }
 
@@ -93,14 +83,13 @@ public class GameData
 {
     public int sceneNumber;
     public int money;
-    public List<bool> skins;
+    //public List<bool> skins;
     
 
     public GameData()
     {
         this.money = 0;
-        skins = new List<bool> { true, false, false };
-        
+        //skins = new List<bool> { true, false };
     }
 }
 

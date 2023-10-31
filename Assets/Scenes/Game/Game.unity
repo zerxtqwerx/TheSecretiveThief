@@ -598,8 +598,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5744217687409819915, guid: 818810597cad9664e8bf08c331e065b5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 818810597cad9664e8bf08c331e065b5, type: 3}
 --- !u!1 &821760192 stripped
 GameObject:
@@ -940,25 +939,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1189875140 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2595715242526538690, guid: 818810597cad9664e8bf08c331e065b5, type: 3}
-  m_PrefabInstance: {fileID: 784392155}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1189875142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1189875140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57b8da793d941a04d9bf04b2c8b0f58a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isSkinBuyed: 1
-  index: 0
 --- !u!114 &1216184354 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2803677067041711428, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
@@ -1174,6 +1154,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6877080883638314398, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6877080883650910920, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_text
       value: '
@@ -1188,10 +1172,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6877080884329635961, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+    - target: {fileID: 6877080884329635961, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
     - target: {fileID: 6877080884419607390, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0.00005157326
       objectReference: {fileID: 0}
+    - target: {fileID: 6877080884535955876, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+    - target: {fileID: 6877080884535955876, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
     - target: {fileID: 6877080884804373128, guid: e4c88f95af8eb6743a467faa2d507d57, type: 3}
       propertyPath: m_IsActive
       value: 0

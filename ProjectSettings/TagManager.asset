@@ -16,6 +16,7 @@ TagManager:
   - PatrolPoints1
   - PatrolPoints2
   - PatrolPoints3
+  - skin
   layers:
   - Default
   - TransparentFX
