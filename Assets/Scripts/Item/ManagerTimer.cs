@@ -82,8 +82,7 @@ public class ManagerTimer : MonoBehaviour
             { 
                 gameOver.SetActive(true);
                 selectLevel.SetActive(true);
-                if (Advertisement.isInitialized)
-                    Advertisement.Show("Interstitial_Android");
+                Time.timeScale = 0;
             }
             else
             {
@@ -201,5 +200,19 @@ public class ManagerTimer : MonoBehaviour
                 break;
             }
         }
+    }
+
+    public void ReturnLive()
+    {
+        if (Advertisement.isInitialized)
+            Advertisement.Show("Interstitial_Android");
+
+        hp.RestoreHp();
+        gameOver.SetActive(false);
+        selectLevel.SetActive(false);
+        Time.timeScale = 1;
+        RageFillSeconds = 0;
+        player.MovePlayerToStartLevel();
+        died = 0;
     }
 }
