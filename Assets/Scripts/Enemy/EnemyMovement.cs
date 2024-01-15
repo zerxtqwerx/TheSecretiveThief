@@ -28,6 +28,8 @@ public class EnemyMovement : MonoBehaviour
     public bool isPlayerBehindTheWall = true;
     public string patrolTag;
 
+    public float loockAngle = 54;
+
     void Start()
     {
         managerTimer = FindObjectOfType<ManagerTimer>();
@@ -94,12 +96,12 @@ public class EnemyMovement : MonoBehaviour
             }
 
         }
-        Debug.DrawRay(transform.position, (transform.forward * 3 + transform.right * 2) * 2f);
+        /*Debug.DrawRay(transform.position, (transform.forward * 3 + transform.right * 2) * 2f);
         Debug.DrawRay(transform.position, (transform.forward * 3 + -transform.right * 2) * 2f);
-        Debug.DrawRay(transform.position, player.transform.position - transform.position);
+        Debug.DrawRay(transform.position, player.transform.position - transform.position);*/
 
 
-        if (Vector3.Angle(player.transform.position - transform.position, transform.forward) < 54f && Vector3.Distance(transform.position, player.transform.position) < maxDistanceToFind && !isPlayerBehindTheWall)
+        if (Vector3.Angle(player.transform.position - transform.position, transform.forward) < loockAngle && Vector3.Distance(transform.position, player.transform.position) < maxDistanceToFind && !isPlayerBehindTheWall)
         {
             isPlayerFind = true;
             isTime = true;
@@ -134,6 +136,13 @@ public class EnemyMovement : MonoBehaviour
     {
         normalDistance = 1f;
         isPlayerFind = false;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawRay(transform.position, Quaternion.AngleAxis(loockAngle, Vector3.up) * transform.forward * maxDistanceToFind);
+        Gizmos.DrawRay(transform.position, Quaternion.AngleAxis(-loockAngle, Vector3.up) * transform.forward * maxDistanceToFind);
     }
 }
    
