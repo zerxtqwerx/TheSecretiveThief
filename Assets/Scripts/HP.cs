@@ -22,9 +22,18 @@ public class HP : MonoBehaviour
 
     private void DeleteHeart(int hp)
     {
-        if (lives.Length != null)
+        if (lives.Length > hp && hp >= 0)
         {
             lives[hp].enabled = false;
+        }
+    }
+
+    public void RestoreHp()
+    {
+        hp = 2;
+        foreach (var item in lives)
+        {
+            item.enabled = true;
         }
     }
 }
