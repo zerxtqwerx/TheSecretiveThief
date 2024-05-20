@@ -169,7 +169,7 @@ public class EnemyBlack : MonoBehaviour
 
     public void UniversalSearch()
     {
-        //не работает
+        ////не работает
         normalDistance = 1.25f;
         isPlayerFind = true;
     }
